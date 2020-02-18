@@ -1,0 +1,23 @@
+
+.search-criteria{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.search-criteria-heading{
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    font-size: large;
+}
+.search-criteria-body{
+    padding: 20px;
+}
+.expanded{
+    background: #f0f0f0;
+}
+
+.glyphicon{
+    float: right;
+}

@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+.form-control.ng-touched.ng-invalid{
+    border: 2px solid red;
+}

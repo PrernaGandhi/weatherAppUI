@@ -1,0 +1,10 @@
+header {
+    color : #ffffff;
+    background: #2F3061;
+}
+.center-align {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px 0;
+}

@@ -1,0 +1,39 @@
+<div class="card container">
+    <div class="card-body">
+        <form #f="ngForm" (ngSubmit)="submit(f)">
+            <app-search-criteria-template title="City" class="form-group">
+                <input type="text" pattern="[A-z]+" ngModel name="city" #city="ngModel" class="col-5 form-control"
+                    placeholder="Enter the city to be searched" appInputFormat>
+                <div class="alert alert-danger" *ngIf="!city.valid">
+                    <div *ngIf="city.errors.pattern">Enter a valid City</div>
+                </div>
+            </app-search-criteria-template>
+            <app-search-criteria-template title="State" class="form-group">
+                <input type="text" pattern="[A-z]+" ngModel name="state" #state="ngModel" class="col-5 form-control"
+                    placeholder="Enter the state to be searched" appInputFormat>
+                <div class="alert alert-danger" *ngIf="!state.valid">
+                    <div *ngIf="state.errors.pattern">Enter a valid State</div>
+                </div>
+            </app-search-criteria-template>
+            <app-search-criteria-template title="Country" class="form-group">
+                <input type="text" pattern="[A-z]+" ngModel name="country" #country="ngModel" class="col-5 form-control"
+                    placeholder="Enter the country to be searched" appInputFormat>
+                <div class="alert alert-danger" *ngIf="!country.valid">
+                    <div *ngIf="country.errors.pattern">Enter a valid Country</div>
+                </div>
+            </app-search-criteria-template>
+            <!-- <div class="radio heading"><label for=""><input ngModel type="radio" name="radio" value="1">Subscribe</label></div>
+            <div class="radio heading"><label for=""><input ngModel type="radio" name="radio" value="2">Not now</label></div>
+            <div class="form-group"><label for="valid" class="heading">DATA ENTERED IS VALID</label><select ngModel
+                    name="validData" id="valid" class="form-control">
+                    <option value="" disabled>Select a value</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select></div>
+            <div class="checkbox"><label class="agree" class="heading"><input type="checkbox" name="isAgreed" id=""
+                        ngModel required> I
+                    AM NOT A ROBOT</label></div> -->
+            <input class="col-sm btn btn-primary btn-sm" type="submit" value="Submit" [disabled]="!f.valid">
+        </form>
+    </div>
+</div>
