@@ -1,23 +1,21 @@
-.card{
+.card {
     padding: 60px;
 }
 
-.col-sm{
+.col-sm {
     margin: 10px;
 }
-.btn-primary{
+
+.btn-primary {
     padding: 10px;
     font-size: 20px;
 }
 
-input.col-4{
+input.col-4 {
     border-radius: 5px;
     text-align: center;
 }
 
-.alert{
-    font-size: 15px;
-}
-.heading{
+.heading {
     font-size: 15px;
 }

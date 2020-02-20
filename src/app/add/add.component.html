@@ -1,1 +1,35 @@
-<p>add works!</p>
+<div class="card container">
+    <div class="card-body">
+        <form [formGroup]="form">
+            <div class="form-group">
+                <label for="locationName" class="labels">Location Name</label>
+                <input formControlName="locationName" id="locationName" type="text" class="form-control">
+                <div *ngIf="locationName.touched && locationName.invalid" class="alert alert-danger">Location Name Is Required</div>
+            </div>
+            <div class="form-group">
+                <label for="stateName" class="labels">State Name</label>
+                <input formControlName="stateName" id="stateName" type="text" class="form-control">
+                <div *ngIf="stateName.touched && stateName.invalid" class="alert alert-danger">State Name Is Required</div>
+            </div>
+            <div class="form-group">
+                <label for="countryName" class="labels">Country Name</label>
+                <input formControlName="countryName" id="countryName" type="text" class="form-control">
+                <div *ngIf="countryName.touched && countryName.invalid" class="alert alert-danger">Country Name Is Required</div>
+            </div>
+            <div class="form-group">
+                <label for="temperature" class="labels">Temperature</label>
+                <input formControlName="temperature" id="temperature" type="text" class="form-control">
+                <div *ngIf="temperature.touched && temperature.invalid" class="alert alert-danger">Temperature Is Required</div>
+            </div>
+            <div class="form-group">
+                <label for="humidity" class="labels">Humidity</label>
+                <input formControlName="humidity" id="humidity" type="text" class="form-control">
+                <div *ngIf="humidity.touched && humidity.invalid" class="alert alert-danger">
+                    <div *ngIf="humidity.errors.required" class="alert alert-danger">Humidity Is Required</div>
+                    <div *ngIf="humidity.errors.containPercentageSign" class="alert alert-danger">Percentage Sign must be appended at the end</div>
+                </div>
+            </div>
+            <input class="col-sm btn btn-primary btn-sm" type="submit" value="Submit">
+        </form>
+    </div>
+</div>

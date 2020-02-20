@@ -10,7 +10,7 @@ import { AddComponent } from './add/add.component';
 import { DeleteComponent } from './delete/delete.component';
 import { InputFormatDirective } from './input-format.directive';
 import { SearchCriteriaTemplateComponent } from './search-criteria-template/search-criteria-template.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +27,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

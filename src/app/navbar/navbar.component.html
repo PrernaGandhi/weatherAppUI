@@ -1,11 +1,11 @@
 <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" routerLink="search">Search</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="add">Add</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="delete">Delete</a>
-  </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="search" (click)="search('search')" [routerLinkActive]="'active'">Search</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="add" (click)="add('add')" [routerLinkActive]="'active'">Add</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="delete" (click)="delete('delete')" [routerLinkActive]="'active'">Delete</a>
+    </li>
 </ul>

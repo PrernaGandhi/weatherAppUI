@@ -6,9 +6,23 @@ import { DeleteComponent } from './delete/delete.component';
 
 
 const routes: Routes = [
-  { path: 'search', component: SearchComponent },
-  { path: 'add', component: AddComponent },
-  { path: 'delete', component: DeleteComponent }
+  {
+    path: 'search',
+    component: SearchComponent
+  },
+  {
+    path: 'add',
+    component: AddComponent
+  },
+  {
+    path: 'delete',
+    component: DeleteComponent
+  },
+  {
+    path: '',
+    redirectTo: 'search',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
