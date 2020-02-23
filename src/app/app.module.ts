@@ -11,6 +11,7 @@ import { DeleteComponent } from './delete/delete.component';
 import { InputFormatDirective } from './input-format.directive';
 import { SearchCriteriaTemplateComponent } from './search-criteria-template/search-criteria-template.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddAddressComponent } from './add-address/add-address.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DeleteComponent,
     InputFormatDirective,
     SearchCriteriaTemplateComponent,
+    AddAddressComponent,
   ],
   imports: [
     BrowserModule,

@@ -18,4 +18,7 @@ export class NavbarComponent{
   delete(activeTab){
     this.activeTab = activeTab;
   }
+  address(activeTab){
+    this.activeTab = activeTab;
+  }
 }

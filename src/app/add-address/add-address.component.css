@@ -1,0 +1,13 @@
+.element-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.element-item{
+    padding: 10px 10px;
+}
+
+button{
+    border-width: 0;
+    background-color: white;
+}

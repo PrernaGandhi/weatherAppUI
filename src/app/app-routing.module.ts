@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { AddComponent } from './add/add.component';
 import { DeleteComponent } from './delete/delete.component';
+import { AddAddressComponent } from './add-address/add-address.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'delete',
     component: DeleteComponent
+  },
+  {
+    path: 'address',
+    component: AddAddressComponent
   },
   {
     path: '',

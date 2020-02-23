@@ -1,0 +1,32 @@
+<div class="card container">
+    <div class="card-body">
+        <form [formGroup]="form">
+            <div class="element-container">
+           
+            <div formArrayName="addresses" *ngFor="let add of form.controls.addresses.value;
+            let first = first; let i = index">
+         <div [formGroupName]="i">
+             <ng-container>
+                <div class="form-group element-item">
+                    <label for="locationName" class="labels">Location Name</label>
+                    <input formControlName="locationName" id="locationName" type="text" class="form-control">
+                </div>
+                <div class="form-group element-item">
+                    <label for="stateName" class="labels">State Name</label>
+                    <input formControlName="stateName" id="stateName" type="text" class="form-control">
+                </div>
+             </ng-container>
+         </div>
+         <div class="remove element-item">
+            <button (click)="onRemove(i)"><span class="glyphicon glyphicon-minus">Remove</span></button>
+        </div>
+         </div>
+           
+            <div class="add">
+                <button (click)="onAdd(null)"><span class="glyphicon glyphicon-plus">Add Address</span></button>
+            </div>
+        </div>
+            <input class="col-sm btn btn-primary btn-sm" type="submit" value="Submit">
+        </form>
+    </div>
+</div>
